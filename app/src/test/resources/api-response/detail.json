@@ -1,0 +1,142 @@
+{
+  "items": [
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "5629499534213120",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "Notebook",
+      "count": 19,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "5066549580791808",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "HDD",
+      "count": 14,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "6192449487634432",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "LCD",
+      "count": 14,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "4785074604081152",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "LCD",
+      "count": 19,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "5910974510923776",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "Monitor",
+      "count": 4,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "5348024557502464",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "LCD",
+      "count": 18,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "6473924464345088",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "LCD",
+      "count": 3,
+      "kind": "orderendpoint#resourcesItem"
+    },
+    {
+      "id": {
+        "kind": "Order",
+        "appId": "s~inloop-contacts",
+        "id": "4644337115725824",
+        "parent": {
+          "kind": "Contact",
+          "appId": "s~inloop-contacts",
+          "id": "4808601562513408",
+          "complete": true
+        },
+        "complete": true
+      },
+      "name": "Notebook",
+      "count": 9,
+      "kind": "orderendpoint#resourcesItem"
+    }
+  ],
+  "kind": "orderendpoint#resources",
+  "etag": "\"Yy8JqFvqgBY1xzjQWj9-SHrTymg/H55kdCm1KhFmH8iCOlFBsOlhyGA\""
+}

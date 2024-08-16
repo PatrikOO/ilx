@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.patrik.orders.vo.Contact" />
+
+        <import type="com.patrik.orders.vo.Resource" />
+
+        <variable
+            name="detailResource"
+            type="Resource" />
+
+        <variable
+            name="contact"
+            type="com.patrik.orders.vo.Contact" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/phone_label"
+            style="@style/ListItemTitle"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/ListItemDescription"
+            android:layout_below="@id/phone_label"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:text="@{contact.phone}"
+            tools:text="0903 123 456" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/items_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/phone"
+            android:scrollbars="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/detail_item" />
+
+        <include
+            layout="@layout/loading_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/activity_margin"
+            app:resource="@{detailResource}" />
+
+    </RelativeLayout>
+</layout>

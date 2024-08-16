@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="name"
+            type="String" />
+
+        <variable
+            name="phone"
+            type="String" />
+
+        <variable
+            name="errorText"
+            type="String" />
+
+        <variable
+            name="addCallback"
+            type="com.patrik.orders.ui.addcontact.AddCallback" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/contact_name"
+            style="@style/FullWidthView"
+            android:hint="@string/name_hint"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/phone"
+            android:text="@={name}" />
+
+
+        <EditText
+            android:id="@+id/contact_phone"
+            style="@style/FullWidthView"
+            android:layout_below="@id/contact_name"
+            android:hint="@string/phone_hint"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:text="@={phone}" />
+
+        <TextView
+            android:id="@+id/error"
+            style="@style/ErrorText"
+            visibleGone="@{!errorText.isEmpty()}"
+            android:layout_below="@id/contact_phone"
+            android:text="@{errorText}" />
+
+        <Button
+            android:id="@+id/add"
+            style="@style/FullWidthView"
+            android:layout_marginTop="250dp"
+            android:onClick="@{() -> addCallback.addClick(name, phone)}"
+            android:text="@string/add" />
+
+    </RelativeLayout>
+
+</layout>

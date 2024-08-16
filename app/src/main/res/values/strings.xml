@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Orders</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- contacts fragment -->
+    <string name="action_add_contact">Add Contact</string>
+
+    <!-- add contact fragment -->
+    <string name="add_contact_title">Add New Contact</string>
+    <string name="add">Add</string>
+
+    <string name="name_hint">First and Last Name</string>
+    <string name="phone_hint">Phone</string>
+
+    <string name="error_name">Name must be at least 5 characters in length!</string>
+    <string name="error_phone">Phone must be at least 5 characters in length!</string>
+
+
+    <!-- detail fragment -->
+    <string name="phone">Phone</string>
+    <string name="count">%sx</string>
+
+
+</resources>

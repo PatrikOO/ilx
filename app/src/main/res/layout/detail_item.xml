@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.patrik.orders.vo.Item" />
+
+        <variable
+            name="item"
+            type="com.patrik.orders.vo.Item" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_text_height">
+
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/ListItemTitle"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/pieces"
+            android:layout_toLeftOf="@+id/pieces"
+            android:text="@{item.name}"
+            tools:text="Notebook" />
+
+        <TextView
+            android:id="@+id/pieces"
+            style="@style/ListItemTitle"
+            android:layout_width="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@{@string/count(item.count)}"
+            tools:text="3x" />
+
+    </RelativeLayout>
+</layout>

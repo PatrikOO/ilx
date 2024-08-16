@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.patrik.orders.vo.Contact" />
+
+        <variable
+            name="contact"
+            type="com.patrik.orders.vo.Contact" />
+
+    </data>
+
+    <RelativeLayout
+        android:background="@drawable/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_text_height">
+
+        <ImageView
+            android:id="@+id/photo"
+            style="@style/ImageListItem"
+            app:imageUrl="@{contact.pictureUrl}"
+            tools:src="@drawable/photo_placeholder" />
+
+        <TextView
+            style="@style/ImageListItemTitle"
+            android:layout_alignTop="@+id/photo"
+            android:text="@{contact.name}"
+            tools:text="Meno Priezvisko" />
+
+        <TextView
+            style="@style/ImageListItemDescription"
+            android:layout_alignBottom="@+id/photo"
+            android:text="@{contact.phone}"
+            tools:text="0903 123 456" />
+
+    </RelativeLayout>
+</layout>
